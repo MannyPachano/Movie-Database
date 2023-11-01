@@ -268,4 +268,9 @@ section a {
         padding: 1rem 1rem 1rem;
         
     }
+        
+    .watchlist-main-text {
+        margin: 2rem auto .5rem;
+        text-align: center;
+    }
 }

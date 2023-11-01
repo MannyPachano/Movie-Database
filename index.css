@@ -22,7 +22,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-width: 390px;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -41,7 +40,7 @@ header a {
 form {
     display: flex;
     margin: 0 auto;
-    min-width: 300px;
+    min-width: 260px;
     max-width: 1200px;
 }
 
@@ -228,4 +227,45 @@ section a {
 
 .add-margin-top {
     margin-top: 2rem;
+}
+
+
+/* media queries */
+
+@media (max-width: 480px){
+    header {
+        padding: 5rem 1rem 0;
+    }
+    
+    .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        min-width: 269px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    #main-section {
+        padding: 3rem 1rem 1rem;
+    }
+    
+    .movie-poster {
+        display: none;
+    }
+    
+    .add-margin-top {
+        margin-top: 0;
+    }
+    
+    #watchlist-main-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 0px;
+        padding: 1rem 1rem 1rem;
+        
+    }
 }

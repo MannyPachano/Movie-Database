@@ -197,13 +197,14 @@ button:disabled {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 60vh;
-    padding: 0 3rem 1rem;
+    min-height: 40vw;
+    padding: 0rem 3rem 1rem;
     
 }
 
 .watchlist-main-text {
     margin-bottom: 0.5rem;
+    text-align: center;
 }
 
 section a {
@@ -232,7 +233,7 @@ section a {
 
 /* media queries */
 
-@media (max-width: 480px){
+@media (max-width: 495px){
     header {
         padding: 5rem 1rem 0;
     }
@@ -253,7 +254,7 @@ section a {
     }
     
     .main-icon {
-        margin-top: 5rem;
+        margin-top: 3rem;
     }
     
     .movie-poster {

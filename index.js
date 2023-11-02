@@ -51,7 +51,7 @@ function getMovieID(movieInput){
                             
                             
                         }
-                     })
+                    })
                     
                     
                     mainSection.innerHTML += `
@@ -72,12 +72,24 @@ function getMovieID(movieInput){
                                         <img src="/images/plus-icon.png" class="plus-icon" id="button" data-name="${data.imdbID}">
                                         <p class="movie-data" id="button" data-name="${data.imdbID}">Watchlist</p>
                                     </button>
+                                    
+                                    
                                 </div>
                                 <p class="movie-plot">${data.Plot}</p>
                             </div>
                         </div>
                         <hr>
                     `  
+                }
+                
+                for (let added of watchList){
+                    
+                    if (added.imdbID === data.imdbID){
+                        document.querySelector(`button[data-name='${data.imdbID}']`).setAttribute('disabled', '')
+                        document.querySelector(`button[data-name='${data.imdbID}']`).innerHTML = `
+                                <p class="movie-data"><span style="color: #08a32a; font-weight: 500;">&#10003 Added</span></p>
+                            `
+                    }
                 }
             })
         }
